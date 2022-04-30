@@ -3,10 +3,6 @@
 - `exit` : 종료
 <br/>
 
-- `ed` : 편집
-- `save` : 버퍼에 저장된 쿼리 저장 (ex. `save file.sql`)
-- `get` : 파일로부터 쿼리 불러오기 (ex. `get file.sql`)
-- `start`, `@` : 쿼리 불러온 후 실행 (ex. `@file.sql`)
 - `host` : OS 명령 프롬프트로 나감
 - `help` : 명령어의 사용법 출력
 - `conn 아이디/비밀번호` : 사용자 변경
@@ -28,3 +24,16 @@
 - `set pause on/off` : 결과를 화면 단위로 멈추는지 여부 설정 (기본값은 off)
 - `set time on/off` : 프롬프트에 시간 출력 여부 (기본값은 off)
 - `set timing on/off` : 실행시간 출력
+
+## Buffer 편집
+- `r(un)` : Buffer에 있는 문장 실행 (`/`와 같다)
+- `l(ist)` : 전체 문장 출력
+- `ed(it)` : Buffer에 있는 문장을 파일로 부름 (afiedt.buf)
+- `c(hange)/old/new` : old를 찾아서 new로 변경
+- `del n` : n번째 라인을 지운다
+- `n` : n번째 라인 전체를 text로 변경
+- `a(ppend)` : text line 끝에 text 추가
+- `i(nput)` : text 다음 line에 text 추가
+- `save 파일명` : Buffer 내용을 파일명.sql에 저장
+- `get 파일명` : 파일명.sql에 있는 내용을 Buffer로 가져옴
+- `start 파일명 (또는 @파일명)` : 파일명.sql 실행
